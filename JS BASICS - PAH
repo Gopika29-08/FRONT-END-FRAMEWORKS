@@ -1,0 +1,147 @@
+Question No: 1
+
+Single File Programming Question
+Write a program to multiply given 4 numbers (4,56,33,22).
+
+Input format :
+No console input
+
+Output format :
+Print the product of the given 4 numbers.
+
+Sample test cases :
+Input 1 :
+Output 1 :
+The product is: 162624
+
+==========================
+        Program
+==========================
+let a = 4;
+let b = 56;
+let c = 33;
+let d = 22;
+console.log("The product is:",a*b*c*d);
+
+---------------------------
+
+Question No: 2
+
+Single File Programming Question
+Write a program to swap two numbers.
+
+Input format :
+No console input
+
+Output format :
+Print the values before and after swapping as shown in the sample output.
+
+Sample test cases :
+Input 1 :
+Output 1 :
+The value of a before swapping: 34
+The value of b before swapping: 36
+The value of a after swapping: 36
+The value of b after swapping: 34
+
+==========================
+        Program
+==========================
+console.log("The value of a before swapping:",a);
+console.log("The value of b before swapping:",b);
+let temp = a;
+a = b;
+b = temp;
+console.log("The value of a after swapping:",a);
+console.log("The value of b after swapping:",b);
+
+---------------------------
+
+Question No: 3
+Single File Programming Question
+Write a program to calculate the 2x. 
+
+
+
+Example : if x=5, 2*2*2*2*2 = 32
+
+Input format :
+Value of X in the first line
+
+Output format :
+Print the value of 2x
+
+Sample test cases :
+Input 1 :
+6
+Output 1 :
+64
+
+=============================
+        Program
+=============================
+let a = parseInt(number);
+let x = 1;
+for(i=1;i<=a;i++){
+    x*=2;
+}
+console.log(x);
+
+------------------------------
+
+Question No: 4
+Single File Programming Question
+Write a JavaScript program to display the sample output in the console.
+
+Input format :
+No console input
+
+Output format :
+Print the output as shown in the sample output
+
+Sample test cases :
+Input 1 :
+Output 1 :
+Welcome to the World of Programming!
+
+================================
+          Program
+================================
+console.log("Welcome to the World of Programming!");
+
+--------------------------------
+
+Question No: 5
+
+Single File Programming Question
+Write a program to find the quotient and remainder of given numbers
+
+Number 1 - 15
+
+Number 2 - 6
+
+Input format :
+No console input
+
+Code constraints :
+Division result in the first line
+
+Remainder result in the second line.
+
+Sample test cases :
+Input 1 :
+Output 1 :
+2.5
+3
+
+==================================
+           Program
+==================================
+let num = 15;
+let div = 6;
+let q = num/div;
+let rem = num%div;
+console.log(q);
+console.log(rem);
+
+
