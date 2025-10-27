@@ -1,0 +1,122 @@
+Question No : 1
+
+Single File Programming Question
+Write a program to add two numbers using the function.
+
+Input format :
+No console input
+
+Output format :
+Print the result as shown in the sample output.
+
+Sample test cases :
+Input 1 :
+Output 1 :
+9
+39
+52834
+-979
+
+===========================
+        Program
+===========================
+function addTwoNumbers(a,b){
+    return a+b;
+}
+
+---------------------------
+
+Question No: 2
+Single File Programming Question
+Write a program to check pass or fail. Get the score as input from user and display Pass or Fail in the exam.
+
+
+
+Note: Students with score less than 40 are considered as fail;
+
+Input format :
+A number as an input
+
+Output format :
+Print pass or fail in the exam as shown in the sample output
+
+Sample test cases :
+Input 1 :
+34
+Output 1 :
+You fail the exam.
+Input 2 :
+78
+Output 2 :
+You pass the exam.
+
+===========================
+          Program
+===========================
+let a = parseInt(marks);
+if(a < 40){
+    console.log("You fail the exam.");
+}else{
+    console.log("You pass the exam.");
+}
+
+---------------------------
+
+Question No: 3
+Single File Programming Question
+Problem Statement:
+
+Pranav and Change
+Pranav, an enthusiastic kid visited the "Fun Fair 2017" along with his family. His father wanted him
+to purchase entry tickets from the counter for his family members. Being a little kid, he is just 
+learning to understand units of money. Pranav has paid some amount of money for the tickets but he 
+wants your help to give him back the change of Rs. N using the minimum number of rupee notes.
+
+Consider a currency system in which there are notes of seven denominations, namely, Rs. 1, Rs. 2,
+Rs. 5, Rs. 10, Rs. 50, Rs. 100. If the change is given to Pranav Rs. N is input, write a program
+to computer smallest number of notes that will combine to give Rs. N.
+
+Input format :
+The first line of the input is an integer N, the change to be given to Pranav.
+
+Output format :
+The output should display the smallest number of notes that will combine to give N.
+
+Refer sample input and output for formatting specifications.
+
+Code constraints :
+Do not use any looping structures.
+
+Sample test cases :
+Input 1 :
+1200
+Output 1 :
+12
+Input 2 :
+242
+Output 2 :
+7
+
+==============================
+          Program
+==============================
+let a = parseInt(cash);
+let notes = 0;
+notes+=Math.floor(a/100);
+a%=100;
+notes+=Math.floor(a/50);
+a%=50;
+notes+=Math.floor(a/10);
+a%=10;
+notes+=Math.floor(a/5);
+a%=5;
+notes+=Math.floor(a/2);
+a%=2;
+notes+=Math.floor(a/1);
+a%=1;
+console.log(notes+a);
+
+
+
+
+
