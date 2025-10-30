@@ -1,0 +1,152 @@
+Question No: 1
+Single File Programming Question
+Create a Student class with properties: name, marks, and a method getGrade() which returns:
+
+'A' if marks ≥ 90
+'B' if marks ≥ 75
+'C' otherwise
+Take student name and marks from the console input, then display their grade.
+
+Input format :
+The first line is the name
+
+The second line is the mark
+
+Output format :
+Refer the sample output
+
+Sample test cases :
+Input 1 :
+ravi
+55
+Output 1 :
+ravi's Grade: C
+
+===============================
+         Program
+===============================
+process.stdin.on('data', data =>{
+    let line = data.toString().trim().split('\n');
+    let name = line[0];
+    let mark = parseInt(line[1]);
+    
+    class Student{
+        constructor(name,mark){
+            this.name = name;
+            this.mark = mark;
+        }
+        getGrade(){
+            if(this.mark >= 90){
+                return "A";
+            }else if(this.mark >= 75){
+                return "B";
+            }else{
+                return "C";
+            }
+        }
+    }
+    let student = new Student(name,mark);
+    console.log(`${student.name}'s Grade: ${student.getGrade()}`);
+})
+
+
+
+Question No: 2
+Single File Programming Question
+Build an application with Javascript where you need find the bill for the purchased things
+
+
+
+Create a class with name, price and quantity as the attributes. 
+
+Create object, feed the inputs, find the total bill
+
+Input format :
+The first line is the name
+
+The second line is the price of a thing
+
+The third line is the quantity
+
+Sample test cases :
+Input 1 :
+alex
+50
+4
+Output 1 :
+Total bill for alex: 200
+
+===============================
+          Program
+===============================
+
+process.stdin.on('data', data=>{
+    let line = data.toString().trim().split('\n');
+    let name = line[0];
+    let price = parseInt(line[1]);
+    let quantity = parseInt(line[2]);
+    
+    class Bill{
+        constructor(name,price,quantity){
+            this.name = name;
+            this.price = price;
+            this.quantity = quantity;
+        }
+        getBill(){
+            return this.price*this.quantity;
+        }
+    }
+    let bill = new Bill(name,price,quantity);
+    console.log(`Total bill for ${bill.name}: ${bill.getBill()}`)
+})
+
+
+Question No: 3
+Single File Programming Question
+Create an Employee class with name, basicSalary, and bonus.
+
+Add a method getTotalSalary() that returns total salary = basicSalary + bonus.
+
+Read all values from input and print the total salary of the employee.
+
+Input format :
+The first line is the name
+
+The second line is the basicSalary
+
+The third line is the bonus
+
+Output format :
+Refer the sample output
+
+Sample test cases :
+Input 1 :
+virat
+34000
+3000
+Output 1 :
+virat's Total Salary: 37000
+
+
+================================
+           Program
+================================
+process.stdin.on('data', data =>{
+    let line = data.toString().trim().split('\n');
+    let name =line[0];
+    let salary =parseInt(line[1]);
+    let bonus = parseInt(line[2]);
+    
+    class Employee{
+        constructor(name,salary,bonus){
+            this.name = name;
+            this.salary = salary;
+            this.bonus = bonus;
+        }
+        getTotalSalary(){
+            return this.salary+this.bonus;
+        }
+    }
+    let Emp = new Employee(name,salary,bonus);
+    console.log(`${Emp.name}'s Total Salary: ${Emp.getTotalSalary()}`)
+})
